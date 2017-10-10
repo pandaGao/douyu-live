@@ -1,0 +1,29 @@
+{
+  "name": "douyu-live",
+  "version": "0.0.1",
+  "description": "Node.js Toolkit for douyu",
+  "main": "dist/douyu-live.js",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "test": "node ./test/room.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandaGao/douyu-live.git"
+  },
+  "keywords": [
+    "douyu"
+  ],
+  "author": "Ryan Gao <me@pandagao.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandaGao/douyu-live/issues"
+  },
+  "homepage": "https://github.com/pandaGao/douyu-live#readme"
+}
