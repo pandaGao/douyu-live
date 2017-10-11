@@ -25,13 +25,11 @@ class STT {
   }
 
   static stringify (obj) {
-    if (obj instanceof Array) {
-      return obj.map(val => this.encodeString(val) + '/').join('')
-    } else {
-      return Object.keys(obj)
+    return obj instanceof Array
+      ? obj.map(val => this.encodeString(val) + '/').join('')
+      : Object.keys(obj)
         .map(key => `${this.encodeString(key)}@=${this.encodeString(obj[key])}/`)
         .join('')
-    }
   }
 
   static encodeString (str) {
@@ -123,7 +121,6 @@ class DouyuRoom extends EventEmitter {
       this.messageHandler(message);
     });
     this._heartbeatService = null;
-    return this
   }
 
   connect () {

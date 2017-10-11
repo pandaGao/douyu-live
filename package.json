@@ -11,7 +11,8 @@
     "standard": "^10.0.3"
   },
   "scripts": {
-    "test": "node ./test/room.js"
+    "test": "node ./test/room.js",
+    "dev": "rollup -c && npm run test"
   },
   "repository": {
     "type": "git",
